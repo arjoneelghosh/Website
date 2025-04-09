@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app)  # allow requests from Bolt frontend
+CORS(app)  # allow requests from the frontend
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
