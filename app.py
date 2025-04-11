@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app)  # Frontend Request
+CORS(app)  # for frontend_request
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
