@@ -18,7 +18,7 @@ def chat():
 
     try:
         response = openai.ChatCompletion.create(
-            model="gpt-4-1106-preview",  # Using gpt-4-turbo
+            model="gpt-4-1106-preview",  # Try using gpt-4-turbo 
             messages=[
                 {"role": "system", "content": "You are Arjoneel Ghosh's AI representative. Help users understand his background, projects, and career. You can also reply in Hindi and Bengali if users message in those languages."},
                 {"role": "user", "content": user_input}
